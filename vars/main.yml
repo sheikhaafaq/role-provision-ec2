@@ -1,0 +1,13 @@
+---
+# vars file for ec2
+
+key: "awskey.pem"
+inst_type: "t2.micro"
+image_id: "ami-0bcf5425cdc1d8a85"
+security_group: "sg-6bd18210"
+count: "2"
+subnet_id: "subnet-0107e16a" 
+assign_public_ip: "yes"
+os_name: "Webserver"
+access_key: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+secret_key: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" 

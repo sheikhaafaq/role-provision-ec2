@@ -1,0 +1,17 @@
+---
+# tasks file for ec2
+- name: "launch EC2 instance using boto3 api"
+  ec2:
+          key_name: '{{ key }}'
+          instance_type: '{{ inst_type }}'
+          image: '{{ image_id }}'
+          wait: yes 
+          group: '{{ security_group }}'
+          count: '{{ count }}'
+          vpc_subnet_id: '{{ subnet_id }}'
+          assign_public_ip: '{{ assign_public_ip }}'
+          instance_tags:
+                  Name: '{{ os_name }}'    
+          aws_access_key: '{{ access_key }}'
+          aws_secret_key: '{{ secret_key }}'
+
